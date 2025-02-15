@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PS Trans Solution - Home</title>
+  <!-- Bootstrap CSS Link -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom Styles */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .hero video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding-top: 5%;
+    }
+
+    .hero h1 {
+      color: #003366;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-weight: bold;
+      color: black;
+      font-size: 1.25rem;
+    }
+
+    .navbar-nav .nav-link {
+      color: #003366 !important;
+      font-weight: bold;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #001f3d;
+    }
+
+    .contact-box {
+      background-color: white;
+      border: 2px solid #003366;
+      padding: 30px;
+      text-align: center;
+      margin: 30px auto;
+      width: 90%;
+      border-radius: 10px;
+    }
+
+    .whatsapp-btn {
+      background-color: #25d366;
+      color: black;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #128c7e;
+    }
+
+    .scroll-container {
+      display: flex;
+      overflow-x: auto;
+      padding: 20px;
+      scroll-snap-type: x mandatory;
+    }
+
+    .box {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      margin: 15px;
+      border-radius: 8px;
+      min-width: 300px;
+      flex-shrink: 0;
+      scroll-snap-align: start;
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/img1.jpg" alt="Logo" style="height: 50px;">
+        <span class="text-dark font-weight-bold">PS Trans Solution India</span>
+      </a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Branches</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Warehousing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <video autoplay loop muted>
+      <source src="assets/video/video1.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content text-white">
+      <h1 class="display-4">Welcome to PS Trans Solution</h1>
+      <p>Your trusted partner for logistics and transportation.</p>
+      <a href="booking.html" class="btn btn-primary">Book Now</a>
+    </div>
+  </section>
+
+  <section class="contact-box">
+    <p class="h4">Head Office: 385, NEAR SALONI WEIGHT BRIDGE, BHIWANDI</p>
+    <p class="h5 text-primary">+91 7039000480, +91 7039000471</p>
+    <a href="https://wa.me/7039000480" target="_blank" class="whatsapp-btn">WhatsApp</a>
+  </section>
+
+  <section class="scroll-container">
+    <div class="box">
+      <h3>Why Choose Us?</h3>
+      <ul>
+        <li>Reliable & Timely Deliveries</li>
+        <li>Pan India Coverage</li>
+        <li>Advanced Tracking System</li>
+        <li>Dedicated Customer Support</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Our Branches</h3>
+      <p>We offer logistics solutions nationwide.</p>
+      <a href="branches.html" class="btn btn-danger">Explore</a>
+    </div>
+    <div class="box">
+      <h3>Contact Us</h3>
+      <p>For any inquiries, feel free to reach out.</p>
+      <a href="contact.html" class="btn btn-danger">Contact Us</a>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 PS Trans Solution. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
