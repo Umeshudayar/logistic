@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PS Trans Solution - Booking</title>
+  <!-- Bootstrap CSS Link -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+    
+    .hero video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding-top: 1%;
+    }
+    
+    .navbar-nav .nav-link {
+      color: #003366 !important;
+      font-weight: bold;
+    }
+    
+    .navbar-nav .nav-link:hover {
+      color: #001f3d;
+    }
+    
+    .navbar-brand img {
+      height: 50px;
+      margin-right: 10px;
+    }
+    
+    #booking-form {
+      background-color: #004b6f;
+      padding: 40px 0;
+    }
+    
+    .booking-form-box {
+      background-color: white;
+      box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      padding: 30px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .form-control {
+      border-radius: 8px;
+      padding: 12px;
+      border: 2px solid #ccc;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    .form-control:focus {
+      border-color: #003366;
+      box-shadow: 0 0 5px rgba(0, 51, 102, 0.7);
+    }
+    
+    .submit-btn {
+      background-color: #003366;
+      color: white;
+      padding: 12px;
+      border-radius: 8px;
+      font-weight: bold;
+      width: 100%;
+      text-align: center;
+      border: none;
+    }
+    
+    .submit-btn:hover {
+      background-color: #001f3d;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-md">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/images/img1.jpg" alt="PS Trans Solution Logo" class="mr-2">
+        <span class="text-dark font-bold">PS Trans Solution India</span>
+      </a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Branches</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Warehousing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="booking-form" class="py-5">
+    <div class="container">
+      <h2 class="text-center text-white mb-4">Book Your Shipment</h2>
+      <div class="booking-form-box">
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="consignor-name">Consignor Name</label>
+            <input type="text" id="consignor-name" name="consignor-name" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="consignor-number">Consignor Number</label>
+            <input type="text" id="consignor-number" name="consignor-number" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="3" class="form-control" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="consignee-name">Consignee Name</label>
+            <input type="text" id="consignee-name" name="consignee-name" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="consignee-number">Consignee Number</label>
+            <input type="text" id="consignee-number" name="consignee-number" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="from">From</label>
+            <input type="text" id="from" name="from" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="to">To</label>
+            <input type="text" id="to" name="to" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="weight">Weight (kg)</label>
+            <input type="number" id="weight" name="weight" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="quantity" class="form-control" required>
+          </div>
+          <div class="form-group mb-4">
+            <label for="goods-bill-upload">Goods Bill Upload</label>
+            <input type="file" id="goods-bill-upload" name="goods-bill-upload" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Submit Booking</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2025 PS Trans Solution. All rights reserved.</p>
+  </footer>
+</body>
+</html>
